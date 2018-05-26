@@ -20,7 +20,7 @@ public class ConnectionFactory {
 	public static Connection obtemConexao() throws SQLException {
 		if (conn.get() == null){
 			conn.set(DriverManager
-					.getConnection("jdbc:mysql://localhost/pratprogaula02?user=root&password=uh220799"));
+					.getConnection("jdbc:mysql://localhost/pratprogaula02?user=alunos&password=alunos"));
 		}
 		return conn.get();
 	}
